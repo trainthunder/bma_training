@@ -9,6 +9,9 @@
 - [Migration Changelog](#-migration-changelog)
 
 
+## ER diagram
+![image](https://github.com/user-attachments/assets/bfe01214-9788-4e13-b373-abb9f46fe77e)
+
 ## 📂 Table Description
 
 | Table Name             | Description                                                                 |
