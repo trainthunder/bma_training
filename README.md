@@ -1,5 +1,12 @@
 # 
+## 📑 Table of Contents
 
+- [ER diagram](#-introduction)
+- [Connection](#-prerequisites)
+- [Table Description](#-TableDescription)
+- [Fields Description](#-configuration)
+- [Database Design Decision](#-connecting-to-postgresql)
+- [Migration Changelog](#-example-usage)
 
 
 ## 📂 Table Description
