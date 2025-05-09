@@ -40,3 +40,45 @@
     1. More Complex Queries
     2. Data Integrity
     3. Transaction Management
+       
+![image](https://github.com/user-attachments/assets/6512ef02-7816-4325-97bb-d022642e4832)
+
+## Migration Changelog
+
+This changelog tracks all database migrations for the educational course management system. Each section describes the structure, relationships.
+
+
+## 20250509120000_create_departments
+
+**Table Created:** `departments`  
+**Fields:**
+- `name_th` (string, limit: 100) – department name in Thai
+- `name_en` (string, limit: 100) – department name in English
+
+**Relationships:**
+- None
+
+---
+
+## 20250509120100_create_course_categories
+
+**Table Created:** `course_categories`  
+**Fields:**
+- `name_th`, `name_en` – category names
+- `department_id` – foreign key
+
+**Relationships:**
+- `belongs_to :department`
+
+---
+
+## 20250509120200_create_courses
+
+**Table Created:** `courses`  
+**Primary Key:** `course_id`  
+**Fields:**
+- `name_th`, `name_en`, `total_hours`, `total_credits`, `evaluation_criteria`
+- `course_category_id` – foreign key
+
+**Relationships:**
+- `belongs_to :course_category`
