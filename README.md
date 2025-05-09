@@ -5,7 +5,7 @@
 - [Connection](#-prerequisites)
 - [Table Description](#-table-description)
 - [Fields Description](#-configuration)
-- [Database Design Decision](#-decision-document)
+- [Decision Document](#-decision-document)
 - [Migration Changelog](#-migration-changelog)
 
 
