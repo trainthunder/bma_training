@@ -25,6 +25,72 @@
 | `topics`               | Contains granular topics that fall under specific subjects.                 |
 | `subjects_topic`       | Junction table linking subjects to their respective topics.                 |
 
+## Fields Description
+
+## 🏢 departments
+- `department_id` - ID that refer to department
+- `name_th` – Name of department in thai language
+- `name_en` – Name of department in english language
+
+---
+
+## 🗂 course_categories
+- `category_id` – ID that refer to category
+- `name_th` – Name of course category in thai language
+- `name_en` – Name of course category in english language
+- `departments_id` – ID of department that relation with this course category
+
+---
+
+## 📚 courses
+- `course_id` – ID that refer to course
+- `name_th` – Name of course in thai language
+- `name_en` – Name of course in english language
+- `total_hours` – Total hours to learn this course
+- `total_credits` – Total credits of this course
+- `course_categories_id` – ID that refer to category
+- `evaluation_criteria` – Criteria for evaluate
+
+---
+
+## ✅ registration_conditions
+- `condition_id` – ID that refer to registration condition
+- `course_id` – ID that refer to course id that relation with this registration condition
+- `condition_type` – The condition type of this registration condition
+- `description` – Description about this conditions
+
+---
+
+## 📖 subjects
+- `subject_id` – ID that refer to subject
+- `name_th` – Name of subject in thai language
+- `name_en` – Name of subject in english language
+- `hours` – Hour of this subject take
+- `credits` – Credit of this subject
+
+---
+
+## 📌 topics
+- `topic_id` – ID that refer to topic
+- `name_th` – Name of topic in thai language
+- `name_en` – Name of topic in english language
+- `hours` – Hours to use in this topic
+- `credits` – Credits of this topic
+
+---
+
+## 🔁 course_subjects
+- `course_id` – ID of course that relation with this subject
+- `subject_id` – ID of subject that relation with this course
+
+---
+
+## 🔁 subjects_topics
+- `subject_id` – ID of subject that relation with this topic
+- `topic_id` – ID of topic that relation with this subject
+
+---
+
 ## Decision Document
 
 ---
