@@ -31,10 +31,10 @@
 1. **Flexibility in Data Entry**: can be added or modified independently of the main course information.
 2. **Reusability:** Subjects and topics can be reused across multiple courses.
 3. **Scalability:** As the number of courses, subjects, or topics grows, the database can handle the increased data volume more efficiently
-
+4. **UI Workflow Alignment:** The design allows the creation of a course record in the database before subjects and topics are defined. This separation simplifies the initial course creation process. The administrator doesn't need to provide subject and topic details when first creating the course, making the process more streamlined and user-friendly.
 **Many-to-Many Relationships:** The `course_subjects` and `subject_topics` junction tables are essential for handling the many-to-many relationships. A course can have multiple subjects, and a subject can belong to multiple courses. Similarly, a subject can have multiple topics, and a topic can belong to multiple subjects.
 
-### Tradeoff
+## Tradeoff
 
 1. Increased Complexity in Data Management
     1. More Complex Queries
