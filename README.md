@@ -3,7 +3,7 @@
 
 - [ER diagram](#-introduction)
 - [Connection](#-prerequisites)
-- [Table Description](#-TableDescription)
+- [Table Description](#-table_description)
 - [Fields Description](#-configuration)
 - [Database Design Decision](#-connecting-to-postgresql)
 - [Migration Changelog](#-example-usage)
