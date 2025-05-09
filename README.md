@@ -5,8 +5,8 @@
 - [Connection](#-prerequisites)
 - [Table Description](#-table-description)
 - [Fields Description](#-configuration)
-- [Database Design Decision](#-connecting-to-postgresql)
-- [Migration Changelog](#-example-usage)
+- [Database Design Decision](#-decision-document)
+- [Migration Changelog](#-migration-changelog)
 
 
 ## 📂 Table Description
@@ -22,7 +22,7 @@
 | `topics`               | Contains granular topics that fall under specific subjects.                 |
 | `subjects_topic`       | Junction table linking subjects to their respective topics.                 |
 
-# Decision Document
+## Decision Document
 
 ---
 
@@ -34,7 +34,7 @@
 
 **Many-to-Many Relationships:** The `course_subjects` and `subject_topics` junction tables are essential for handling the many-to-many relationships. A course can have multiple subjects, and a subject can belong to multiple courses. Similarly, a subject can have multiple topics, and a topic can belong to multiple subjects.
 
-## Tradeoff
+### Tradeoff
 
 1. Increased Complexity in Data Management
     1. More Complex Queries
